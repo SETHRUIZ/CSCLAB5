@@ -1,0 +1,20 @@
+;References:
+;  Written/online sources used:
+;    CSC 261 lab5
+;    CSC 261 Lab: Propositional Logic
+;    pseudocode referenced
+;      University of Texas at Arlington: Vassilis Athitsos
+;         http://vlm1.uta.edu/~athitsos/courses/
+;            cse4308_fall2015/lectures/03a_tt_entails.pdf
+;      University of Evansville: Hwang
+;         http://uenics.evansville.edu/~hwang/s07-courses/]
+;            cs430/slides23/text2.html     
+;     
+;  Help obtained:
+;    Asked Prabir Pradhan questions about formatting knowledge bases.
+;    Help also obtained from Jerod Weinman.
+;Academic honesty certification:
+;  Our initials below confirm that the above list of sources
+;  is complete AND that I/we have not talked to anyone else
+;  (e.g., CSC 261 students) about the solution to this problem
+;  Initials:  SER, JS

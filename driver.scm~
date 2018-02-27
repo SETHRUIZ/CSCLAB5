@@ -63,7 +63,6 @@
                                    (get-symbols query4))
                        '()
                        ))
-(newline)
 (display "tt-check-all test expected true \n")
 (display (tt-check-all KB1
                        query5

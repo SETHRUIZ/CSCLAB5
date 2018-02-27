@@ -60,7 +60,9 @@
 ;;   entails is true when query is true in every model in which
 ;;   knowledge-base is true. Otherwise, entails is false.
 ;;
-;;http://vlm1.uta.edu/~athitsos/courses/cse4308_fall2015/lectures/03a_tt_entails.pdf
+;; referenced pseudocode from
+;;        http://vlm1.uta.edu/~athitsos/courses/
+;;            cse4308_fall2015/lectures/03a_tt_entails.pdf
       
 (define tt-entails? (lambda (knowledge-base query)
                       (let [(list1 (get-symbols knowledge-base))
@@ -98,8 +100,10 @@
 ;; Postconditions
 ;;   entails is true when query is true in every model in which
 ;;   knowledge-base is true. Otherwise, entails is false.
-
-;;http://uenics.evansville.edu/~hwang/s07-courses/cs430/slides23/text2.html
+;;
+;; referenced pseudocode from
+;;      http://uenics.evansville.edu/~hwang/s07-courses/]
+;;          cs430/slides23/text2.html
 
 (define tt-check-all
   (lambda (knowledge-base query symbols model)

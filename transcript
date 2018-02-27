@@ -1,0 +1,24 @@
+Script started on Tue 27 Feb 2018 02:37:19 PM CST
+iverson$ exit     mzscheme -l lang/plt-pretty-big-text.ss -f driver.scm 
+pl-true expected true 
+#t
+pl-true expected false 
+#f
+pl-true expected false 
+#f
+pl-true expected true 
+#t
+tt-entails expected true 
+#t
+tt-entails expected false 
+#f
+tt-entails expected false 
+#f
+tt-check-all test  expected false
+#f
+tt-check-all test expected true 
+#t
+iverson$ exit
+exit
+
+Script done on Tue 27 Feb 2018 02:37:23 PM CST
