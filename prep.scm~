@@ -1,0 +1,38 @@
+(load "logic.scm")
+
+(define notA (list 'not 'A))
+
+(define AVB (list 'or 'A 'B))
+
+(define D^T (list 'and 'D #t))
+
+(define AVBVC (list 'or 'A ( list 'or 'B 'C)))
+
+(define AB->CD (list '=> (list 'and 'A 'B) (list 'or 'C 'D)))
+
+(define conjunction-symbols (get-symbols D^T))
+
+(define disjunction-symbols (get-symbols AVBVC))
+
+(boolean? sentence)
+;(symbol? sentence)
+;(cdr (assoc 'symbol model))
+;(eq? 'not (car sentence))
+
+(define pl-true?
+  (lambda (sentence model)
+  (cond[(boolean? sentence)
+        sentence]
+        [(symbol? sentence)
+        (cdr (assoc sentence model))]
+        [(eq? 'not (car sentence))
+         (not (pl-true (cadr sentence) model))]
+        [(eq? 'and (car sentence))
+         (and (pl-true (cadr sentence)) (pl-true (caddr sentence)))]
+        [(eq? 'or (car sentence))
+         (or (pl-true (cadr sentence)) (pl-true (caddr sentence)))])))
+ 
+ 
+
+ 
+
