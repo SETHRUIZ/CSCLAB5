@@ -1,5 +1,5 @@
 (load "logic.scm")
-(load "enumeration.scm")
+(require "weinman-enumeration.scm")
 
 (define notA (list 'not 'A))
 

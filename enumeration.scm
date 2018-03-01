@@ -1,4 +1,4 @@
-
+(load "logic.scm")
 
 ;;
 ;; File
@@ -71,8 +71,7 @@
                         knowledge-base
                          query
                          (list-union list1 list2)
-                         '()
-                       ))))
+                         '()))))
 
 
 
@@ -110,8 +109,7 @@
     (if (null? symbols)
         (if (pl-true? knowledge-base model)
             (pl-true? query model)
-            #t
-            )
+            #t)
         (and (tt-check-all
               knowledge-base
                query
@@ -121,7 +119,7 @@
               knowledge-base
                query
                (cdr symbols)
-               (cons (cons (car symbols) #f) model))) )))
+               (cons (cons (car symbols) #f) model))))))
 
 ;;
 ;; Procedure
